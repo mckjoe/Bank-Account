@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Wells FarJo</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Wells FarJoe</h2>
+      <form id="openAccount">
+        <div class="form-group">
+          <label for="name">Please enter your name:</label>
+          <input id="name" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="initialDeposit">Please enter your initial deposit:</label>
+          <input id="initialDeposit" type="text" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-info">Create Account</button>
+      </form>
+      <br>
+      <br>
+      <div id="buttons">
+        <button id="getCash" class="btn btn-success">deposit</button>
+        <button id="giveCash" class="btn btn-warning">Witdrawl</button>
+        <button id="contact" class="btn btn-info">Contact</button>
+        <button id="cancel" class="btn btn-danger">Cancel</button>
+        <button id="help" class="btn btn-info">Get Help</button>
+      </div>
+      <br>
+      <form id="depositForm">
+        <div class="form-group">
+          <label for="deposit">Please enter total deposit amount:</label>
+          <input id="deposit" type="text" class="form-group">
+        </div>
+        <button type="submit" class="btn btn-success">Make Deposit</button>
+      </form>
+      <br>
+      <form id="withdrawlForm">
+        <div class="form-group">
+          <label for="withdrawl">Please enter total withdrawl amount:</label>
+          <input id="withdrawl" type="text" class="form-group">
+        </div>
+        <button type="submit" class="btn btn-success">Get Cash</button>
+      </form>
+      <br>
+      <p id="balance"><span id="blackFont">Your total current balance is:</span> $<span class="output"></span></p>
+    </div>
+  </body>
+</html>
